@@ -1,0 +1,135 @@
+/* pc */
+@media (min-width:992px) {
+    .mobile-header{
+        display: none;
+    }
+}
+
+/* máy tinh bảng và điện thoại*/
+@media (max-width:991.98px) {
+    .container__item {
+        display: none;
+    }
+
+    /* căn giữa */
+    .container {
+        position: relative;
+    }
+
+    .container__img {
+        position: absolute;
+        left: 50%;
+        translate: -50% -5%;
+    }
+
+    .menu__header__icon {
+        position: absolute;
+        top: 18px;
+        left: 26px;
+        color: #fff;
+        width: 24px;
+    }
+
+    /* 4 lớp phủ */
+    .menu__overlay {
+        position: fixed;
+        background: rgba(0, 0, 0, 0.2);
+        inset: 0;
+        z-index: 1;
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.5s;
+    }
+
+    /* 5 iểm tra xem chec có dc chec o */
+    .check__bock:checked~.menu__overlay {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    /* code cho menu drawer */
+    .menu-drawer {
+        position: fixed;
+        background: #2e1919;
+        inset: 0 40% 0 0;
+        z-index: 2;
+        transform: translateX(-100%);
+        transition: 0.5s;
+        padding: 60px;
+    }
+
+    .check__bock:checked~.menu-drawer {
+        transform: translateX(0);
+    }
+
+    /* menut top */
+    .close__menu {
+        width: 24px;
+        color: #fff;
+    }
+
+    .menu-drawer__top{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 25px;
+    }
+    .linh{
+        display: flex;
+        transition: 1s;
+    }
+    .linh:hover{
+        color: #7ec8f9;
+    }
+    .container__botoom{
+        flex-direction: column;
+    }
+    .container__bootoom-left{
+        order: 2;
+        margin-top: 30px;
+        width: 100%;
+        text-align: center;
+    }
+    .container__botoom-right{
+        order: 1;
+    }
+    .left__buton{
+        justify-content: center;
+    }
+    .container__phansau{
+        flex-direction: column;
+    }
+    .right__img{
+        width: 100%;
+    }
+    .left__khoi{
+        width: 100%;
+        row-gap: 4px;
+    }
+    .butonn_chinh{
+        justify-content: center;
+        margin-top: -50px;
+        text-align: center;
+    }
+    .thu3{
+        text-align: center;
+    }
+    .thu3__p{
+        margin: 0 auto;
+    }
+    .thu3__botoom{
+        grid-template-columns: 1fr;
+    }
+}
+
+/* máy tính bảng */
+@media (min-width:768px) and (max-width:991.98px) {}
+
+/* mobile */
+@media (max-width:767.98px) {}
+
+/* .main,
+.footer,
+.container__botoom {
+    display: none;
+} */
