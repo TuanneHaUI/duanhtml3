@@ -120,8 +120,49 @@
     .thu3__botoom{
         grid-template-columns: 1fr;
     }
+    .thu4__boc{
+        flex-direction: column;
+    }
+    .thu4__img2{
+        display: none;
+    }
+    .noidung{
+        width: 100%;
+        text-align: center;
+    }.noidung__p,
+    .noidung__h1{
+        max-width: 100%;
+    }
+    .noidung__h1{
+        margin-top: 100px;
+    }
+    .thu5__main__img{
+        grid-template-columns: repeat(2,1fr);
+        gap:100px 3px ;
+    }
+    .anh1{
+        margin: 0 auto;
+    }
+    .img6 {
+        width: 256px;
+        height: 489px;
+        flex-shrink: 0;
+        margin-left: 3px;
+        position: absolute;
+        bottom: 0;
+        transition: 2s;
+    }
+    .main__trai{
+        width: 430px;
+    }
+    .phan6__p,
+    .phan6__h1{
+        text-align: center;
+    }
+    .phan6__h1{
+        font-size: 4rem;
+    }
 }
-
 /* máy tính bảng */
 @media (min-width:768px) and (max-width:991.98px) {}
 
